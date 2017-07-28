@@ -1,0 +1,20 @@
+@media screen and (max-width: 1200px) {
+  .hide-large {
+    display: none;
+  }
+
+  .hide-small,
+  .close {
+  	display: block;
+  }
+
+  .phone {
+  	padding-bottom: 12px;
+  }
+
+  .logo__pic {
+  	width: 120px;
+  	height: 45px;
+  }
+
+}
