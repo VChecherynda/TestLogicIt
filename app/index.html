@@ -9,34 +9,76 @@
 <body>
 	
 	<div class="wrapper">
-		<header class="header">
-			<div class="phone">
-				<p>+38 (098) 555-66-77</p>
-			</div>
-			<div class="logo">
-				
-			</div>
+		<div class="container">
+			<header class="header">
+				<div class="phone">
+					<p>+38 (098) 555-66-77</p>
+				</div>
 
-			<nav>
-				<ul>
-					<li><a href="/">all items</a></li>
-					<li><a href="/">wordpress</a></li>
-					<li><a href="/">websites</a></li>
-					<li><a href="/">html</a></li>
-					<li><a href="/">mark</a></li>
-					<li><a href="/">cms</a></li>
-					<li><a href="/">merce</a></li>
-					<li><a href="/">ui design</a></li>
-					<li><a href="/">contacts</a></li>
-				</ul>
-			</nav>
-		</header>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="logo">
+							<a class="logo__link" href="/">
+								<img class="logo__pic" src="" alt="">
+							</a>
+						</div>
+					</div>
+							
+					<div class="col-md-10">
+						<nav class="nav">
+							<ul class="menu">
+								<li class="menu__item">
+									<a class="menu__link" href="/">all items</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">wordpress</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">websites</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">html</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">marketing</a>
+								</li>
+								<li class="menu__item menu__item--submenu">
+									<a class="menu__link active" href="/">cms</a>
+									<ul class="submenu">
+										<li class="submenu__item">
+											<a class="submenu__link" href="/">Wordpress</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="/">OpenCart</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="/">Umi</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="/">Joomla</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">ecommerce</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">ui design</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="/">contacts</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
 
-		<section class="banner">
-			<h1>Discover our Featured templates of the week </h1>
-			<a href="/">Discover</a>	
-		</section>
-
+			<section class="banner">
+				<header class="banner__header">Discover our Featured templates of the week </header>
+				<a class="banner__button" href="/">Discover</a>
+			</section>
+		</div>
 	</div>
 	
 	<script src="js/libs.min.js"></script>

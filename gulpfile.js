@@ -22,8 +22,10 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: 'app' // Директория для сервера - app
+			baseDir: 'app'
+			// Директория для сервера - app
 		},
+		open: false,
 		notify: false // Отключаем уведомления
 	});
 });

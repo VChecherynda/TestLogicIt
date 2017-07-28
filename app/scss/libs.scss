@@ -1,3 +1,3 @@
-@import "app/libs/reset-css/reset.css"; // Cброс стилей
-@import "app/libs/bootstrap-grid-only/css/grid12.css"; // Cброс стилей
+@import "app/libs/reset-css/_reset.scss"; // Cброс стилей
+@import "app/libs/bootstrap-sass-grid/sass/bootstrap-sass-grid"; // Bootstrap сетка
 @import "app/libs/magnific-popup/dist/magnific-popup"; // Импортируем библиотеку Magnific Popup

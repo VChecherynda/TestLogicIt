@@ -28,7 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {
 	display: block;
 }
-body {
+body, p {
+	margin: 0;
+	padding: 0;
 	line-height: 1;
 }
 ol, ul {
@@ -44,4 +46,9 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: 0;
 }

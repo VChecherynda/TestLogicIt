@@ -1,0 +1,150 @@
+/*--- COMMON ---*/
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Lato' , sans-serif;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+/*--- HEADER ---*/
+
+.phone {
+	padding: 12px 0 28px 0; 
+	color: $accent;
+}
+
+.logo__pic {
+	display: block;
+	width: 168px;
+	height: 64px;
+}
+
+/*--- MENU ---*/
+
+.menu {
+	display: flex;
+	height: 64px;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.menu__item {
+	margin-left: 30px;
+	position: relative;	
+}
+
+.menu__link {
+	color: $white;
+	letter-spacing: 0,018em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*--- SUBMENU ---*/
+
+.submenu {
+	width: 180px;
+	padding: 65px 0 35px 0;
+	background: $white;
+	text-align: center;
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: 1s all;
+}
+
+.submenu__item {
+	margin-bottom: 18px;
+
+	&:last-child {
+		margin: 0;
+	}
+
+}
+
+.submenu__link {
+	
+	text-decoration: none;
+	color: $black;
+
+	&:hover {
+		color: #999;
+	}
+
+} 
+
+.menu__item--submenu {
+
+	&:hover {
+
+		.menu__link {
+
+			position: relative;
+			z-index: 2;
+			color: $black;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 40px;
+				height: 2px;
+				background: $accent;
+				position: absolute;
+				top: 30px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+		}
+
+		.submenu {
+			opacity: 1;
+			visibility: visible;
+		}
+
+	}
+
+}
+
+
+
+/*--- BANNER ---*/
+
+.banner {
+	max-width: 890px;
+	max-height: 115px;
+	margin: auto;
+	text-align: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.banner__header {
+	margin-bottom: 44px;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: $white;
+}
+
+.banner__button {
+	padding: 18px 62px; ;
+	background: $accent;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $black;
+}
