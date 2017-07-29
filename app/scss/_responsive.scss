@@ -1,14 +1,35 @@
 @media screen and (max-width: 1200px) {
-  .hide-large {
+  .menu {
     display: none;
   }
 
-  .hide-small,
   .icon-mobile {
   	display: block;
   }
 
-  .phone {
+  .menu {
+	flex-direction: column;
+	justify-content: flex-start;
+  }
+
+  .menu__item {
+	margin-bottom: 30px;
+	text-align: right;
+   }
+
+   .submenu {
+   	left: auto;
+   	right: -30px;
+   	transform: translateX(0);
+   }
+
+   .submenu__item {
+	 text-align: right;
+	 padding-right: 30px;
+	}
+
+
+  .header__top {
   	padding-bottom: 12px;
   }
 

@@ -11,11 +11,21 @@
 	position: relative;
 }
 
+.container {
+	width: 1130px;
+	margin: 0 auto;
+}
+
 /*--- HEADER ---*/
 
-.phone {
+.header__top {
 	padding: 12px 0 28px 0; 
 	color: $accent;
+}
+
+.header__bottom {
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo__pic {
@@ -32,6 +42,11 @@
 	height: 64px;
 	align-items: flex-end;
 	justify-content: flex-end;
+
+	&.mobile {
+		display: flex;
+	}
+
 }
 
 .menu__item {
@@ -60,23 +75,6 @@
 	left: 0;
 	z-index: 3;
 	background: $bg-mobile;
-	transition: all ease-out 0.5s;
-	visibility: hidden;
-	opacity: 0;
-
-	&.open {
-		visibility: visible;
-		opacity: 1
-	}
-}
-
-.menu--mobile {
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-.menu__subitem {
-	margin-bottom: 30px;
 }
 
 /*--- HAMBURGER ---*/
@@ -98,7 +96,7 @@
 .bar {
   display: block;
   height: 2px;
-  width: 100%;
+  width: 26px;
   background: $white;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
@@ -111,7 +109,7 @@
 }
 
 .bar-two {
-  width: 62%;
+  width: 16px;
   top: 8px;
 }
 
@@ -152,7 +150,8 @@
 	transform: translateX(-50%);
 	opacity: 0;
 	visibility: hidden;
-	transition: 1s ease-out;
+	transition: 0.2s ease-out;
+	z-index: 2;
 }
 
 .submenu__item {
@@ -182,7 +181,7 @@
 		.menu__link {
 
 			position: relative;
-			z-index: 2;
+			z-index: 3;
 			color: $black;
 
 			&:after {
