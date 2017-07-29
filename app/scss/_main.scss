@@ -12,8 +12,9 @@
 }
 
 .container {
-	width: 1130px;
+	max-width: 1150px;
 	margin: 0 auto;
+	padding: 0 12px;
 }
 
 /*--- HEADER ---*/
@@ -75,6 +76,7 @@
 	left: 0;
 	z-index: 3;
 	background: $bg-mobile;
+	box-sizing: border-box;
 }
 
 /*--- HAMBURGER ---*/
