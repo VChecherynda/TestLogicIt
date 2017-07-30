@@ -1,6 +1,20 @@
-/node_modules/
-/dist/
-/.git/
-/app/css/
-/**/*.psd
-/**/Thumbs.db
+# Dependency directory
+node_modules/
+
+#dist folder
+dist
+
+#Metadata
+*.git
+
+#Mac files
+.DS_Store
+
+#CSS files
+src/css/
+
+#PSD files
+**/*.psd
+
+#Thumbs files
+**/Thumbs.db
